@@ -1,0 +1,73 @@
+:root {
+    --pink: #d317a7;
+    --blue: #5105f7;
+    --black: black;
+    --white: white;
+    --green: #459C21;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--pink);
+    background: url('./background-concert.jpg') bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.keys {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.key  {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.5rem .5rem;
+    border: 3px solid var(--black);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 18vmin;
+    text-align: center;
+    color: var(--white);
+    background: var(--pink);
+    opacity: .7;
+    text-shadow: 0 0 .5rem var(--black);
+    transition: all 0.1s;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playing {
+    transform: scale(1.1);
+    border-color: var(--blue);
+    box-shadow: 0 0 10px var(--blue);
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
